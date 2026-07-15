@@ -1,0 +1,24 @@
+{
+  "drive_type": "ssd",
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "fio_timeout": 180000,
+  "run_definition": {
+    "randrw": {
+      "args": {
+        "BLKSIZE": "8k",
+        "IODEPTH": "1",
+        "RUNTIME": "10s",
+        "SIZE": "100%"
+      },
+      "precondition_loops": 0,
+      "template": "stress_fio.fio"
+    }
+  }
+}

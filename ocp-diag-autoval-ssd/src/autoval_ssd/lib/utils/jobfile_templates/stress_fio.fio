@@ -13,5 +13,4 @@ ramp_time=10
 runtime=RUNTIME
 group_reporting=1
 numjobs=8
-ioengine=libaio
-
+ioengine=io_uring

@@ -82,6 +82,7 @@ class SystemUtils:
         sudo = SystemUtils.get_sudo_prefix(host)
         if pkg_mgr == "apt-get":
             apt_name_map = {
+                "boost-program-options": "libboost-program-options-dev",
                 "fio-engine-libaio": None,
                 "sg3_utils": "sg3-utils",
                 "nvme-cli-1.11.2-1.fb20": "nvme-cli",
