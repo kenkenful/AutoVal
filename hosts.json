@@ -1,0 +1,13 @@
+{
+    "hosts": [
+        {
+            "hostname": "127.0.0.1",
+            "username": "root",
+            "password": "",
+            "local_mode": true,
+            "oob_addr": "127.0.0.1",
+            "oob_username": "root",
+            "oob_password": ""
+        }
+    ]
+}
