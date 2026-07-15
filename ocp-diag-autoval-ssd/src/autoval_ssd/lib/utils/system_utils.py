@@ -20,6 +20,12 @@ class SystemUtils:
     """Class for System utils"""
 
     @staticmethod
+    def get_sudo_prefix(host) -> str:
+        """Return sudo prefix only when the target command is not already root."""
+        ret = host.run_get_result("id -u", ignore_status=True)
+        return "" if ret.return_code == 0 and ret.stdout.strip() == "0" else "sudo "
+
+    @staticmethod
     def get_pkg_mgr(host) -> str:
         """Get package manager dnf, yum, or apt-get."""
         pkg_mgrs = ["yum", "dnf", "apt-get"]
@@ -73,6 +79,7 @@ class SystemUtils:
             pkg_mgr = SystemUtils.get_pkg_mgr(host)
         else:
             pkg_mgr = pkg_mgr
+        sudo = SystemUtils.get_sudo_prefix(host)
         if pkg_mgr == "apt-get":
             apt_name_map = {
                 "fio-engine-libaio": None,
@@ -90,7 +97,7 @@ class SystemUtils:
                 )
                 if installed.return_code == 0 and not force_install and not reinstall:
                     continue
-                cmd = f"sudo apt-get -y install {apt_pkg}"
+                cmd = f"{sudo}apt-get -y install {apt_pkg}"
                 try:
                     result = host.run_get_result(cmd=cmd, ignore_status=True)
                     if result.return_code != 0:
@@ -117,27 +124,27 @@ class SystemUtils:
             ):
                 if from_autoval_tool_path:
                     rpm = host.deploy_tool(rpm)
-                    cmd = f"sudo rpm -i {rpm}"
+                    cmd = f"{sudo}rpm -i {rpm}"
                     if force_install:
-                        cmd = f"sudo rpm -i --force {rpm}"
+                        cmd = f"{sudo}rpm -i --force {rpm}"
                 else:
                     pkgmgr_repo = SiteUtils.get_site_yum_repo_name()
                     # To enable support to install only from fava
                     if pkgmgr_repo and not disable_fava_repo:
-                        cmd = f"sudo {pkg_mgr} -y --disablerepo=\\* "
+                        cmd = f"{sudo}{pkg_mgr} -y --disablerepo=\\* "
                         if pkg_mgr == "dnf":
-                            cmd = f"sudo {pkg_mgr} -y --allowerasing --disablerepo=\\* "
+                            cmd = f"{sudo}{pkg_mgr} -y --allowerasing --disablerepo=\\* "
                         cmd += f"--enablerepo={pkgmgr_repo} install {rpm}"
                     # To enable support to install from other available repos (eg., fb-int.repo)
                     elif disable_fava_repo and pkg_mgr == "dnf":
-                        cmd = f"sudo {pkg_mgr} -y --allowerasing --disablerepo=fava install {rpm}"
+                        cmd = f"{sudo}{pkg_mgr} -y --allowerasing --disablerepo=fava install {rpm}"
                     else:
-                        cmd = f"sudo {pkg_mgr} -y install {rpm}"
+                        cmd = f"{sudo}{pkg_mgr} -y install {rpm}"
                         if pkg_mgr == "dnf":
                             if rpm == "switchtec":
-                                cmd = f"sudo {pkg_mgr} -y remove {rpm}"
+                                cmd = f"{sudo}{pkg_mgr} -y remove {rpm}"
                                 host.run(cmd)
-                            cmd = f"sudo {pkg_mgr} -y --allowerasing install {rpm}"
+                            cmd = f"{sudo}{pkg_mgr} -y --allowerasing install {rpm}"
                     if (
                         rpm not in disable_tools_upgrade
                         and pkg_mgr == "dnf"
@@ -195,9 +202,10 @@ class SystemUtils:
     def uninstall_rpms(host, rpm_list: List[str], tool_path=None) -> None:
         """Uninstall selected rpms"""
         pkg_mgr = SystemUtils.get_pkg_mgr(host)
+        sudo = SystemUtils.get_sudo_prefix(host)
         for rpm in rpm_list:
             # Use yum for uninstalling the rpms to take care of dependencies
-            cmd = f"sudo {pkg_mgr} remove -y {rpm}"
+            cmd = f"{sudo}{pkg_mgr} remove -y {rpm}"
             host.run(cmd, working_directory=tool_path)
 
     @staticmethod
