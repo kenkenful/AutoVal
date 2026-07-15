@@ -33,6 +33,7 @@ TOOLS = [
     "fio-engine-libaio",
     "sg3_utils",
     "sshpass",
+    "lsscsi",
 ]
 
 SMART_LOGS = ["smart-log", "vs-smart-add-log", "vs-nand-stats", "ocp-smart-add-log"]

@@ -21,8 +21,8 @@ class SystemUtils:
 
     @staticmethod
     def get_pkg_mgr(host) -> str:
-        """Get package manager dnf or yum"""
-        pkg_mgrs = ["yum", "dnf"]
+        """Get package manager dnf, yum, or apt-get."""
+        pkg_mgrs = ["yum", "dnf", "apt-get"]
         for pkg_mgr in pkg_mgrs:
             ret = host.run_get_result(f"which {pkg_mgr}", ignore_status=True)
             if ret.return_code == 0:
@@ -73,6 +73,39 @@ class SystemUtils:
             pkg_mgr = SystemUtils.get_pkg_mgr(host)
         else:
             pkg_mgr = pkg_mgr
+        if pkg_mgr == "apt-get":
+            apt_name_map = {
+                "fio-engine-libaio": None,
+                "sg3_utils": "sg3-utils",
+                "nvme-cli-1.11.2-1.fb20": "nvme-cli",
+            }
+            for rpm in rpm_list:
+                apt_pkg = apt_name_map.get(rpm, rpm)
+                if apt_pkg is None:
+                    continue
+                if rpm.startswith("nvme-cli-"):
+                    apt_pkg = "nvme-cli"
+                installed = host.run_get_result(
+                    f"dpkg -s {apt_pkg}", ignore_status=True
+                )
+                if installed.return_code == 0 and not force_install and not reinstall:
+                    continue
+                cmd = f"sudo apt-get -y install {apt_pkg}"
+                try:
+                    result = host.run_get_result(cmd=cmd, ignore_status=True)
+                    if result.return_code != 0:
+                        raise TestError(
+                            f"Failed to install package {apt_pkg}, Reason: "
+                            f"{result.stdout}{result.stderr}",
+                            error_type=ErrorType.RPM_INSTALLATION_FAILED_ERR,
+                        )
+                except HostException as exc:
+                    raise TestError(
+                        f"FAILED - Failed to install package {apt_pkg}, "
+                        f"Reason: {str(exc)}",
+                        exception=exc,
+                    )
+            return
         for rpm in rpm_list:
             rpm_name = rpm
             if rpm.endswith("rpm"):
