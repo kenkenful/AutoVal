@@ -1,0 +1,2 @@
+[console_scripts]
+autoval_test_runner = autoval.autoval_test_runner:main

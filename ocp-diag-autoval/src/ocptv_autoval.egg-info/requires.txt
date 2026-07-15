@@ -1,0 +1,11 @@
+setuptools==70.0.0
+ocptv==0.1.6
+six
+iopath
+paramiko
+
+[dev]
+
+[publish]
+build
+twine
