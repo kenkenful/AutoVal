@@ -342,15 +342,26 @@ class PciUtils:
         pci_addr: String
           The pci address of the drive
         """
-        cmd = "ls -l /sys/block/%s" % device
-        output = host.run(cmd)
-        pattern = r"([\d\w]+:\d+.\d)\/nvme\/(nvme\d+)\/(nvme\d+[a-z]\d+)"
-        output = re.search(pattern, output, re.M)
-        if output:
-            pci_addr = output.group(1)
-            return pci_addr
-        else:
-            raise TestError("Failed to get pcie address for %s device" % device)
+        pattern = r"([0-9a-fA-F]{4}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}\.\d)"
+        controller = re.sub(r"n\d+$", "", device)
+        commands = [
+            f"readlink -f /sys/block/{device}",
+            f"readlink -f /sys/block/{device}/device",
+            f"readlink -f /sys/class/nvme/{controller}/device",
+            f"ls -l /sys/block/{device}",
+        ]
+        outputs = []
+        for cmd in commands:
+            result = host.run_get_result(cmd, ignore_status=True)
+            output = result.stdout + result.stderr
+            outputs.append(f"{cmd}: {output.strip()}")
+            match = re.search(pattern, output, re.M)
+            if match:
+                return match.group(1)
+        raise TestError(
+            "Failed to get pcie address for %s device. Outputs: %s"
+            % (device, "; ".join(outputs))
+        )
 
     def set_nvme_drive_pcie_completion_timeout(
         self, host: "Host", device: str, timeout_value: str

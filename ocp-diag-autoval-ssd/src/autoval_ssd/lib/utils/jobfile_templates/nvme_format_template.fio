@@ -1,6 +1,6 @@
 [global]
 norandommap
-ioengine=libaio
+ioengine=io_uring
 randrepeat=0
 direct=1
 invalidate=1
