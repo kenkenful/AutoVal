@@ -12,7 +12,7 @@
   "name": "sed_check",
   "runner": "autoval",
   "args": null,
-  "execution_type": "REMOTE_EXEC_TEST",
+  "execution_type": "LOCAL_EXEC_TEST",
   "hostage": "NONE",
   "continue_on_error": true,
   "skip_health_check": false,
