@@ -30,6 +30,14 @@ sudo SITE_SETTINGS=/home/ttt/AutoVal/site_settings.json env/bin/python -m autova
   --test_control /home/ttt/AutoVal/control.json
 ```
 
+Run `iogo` directly with `iogo.json`:
+
+```bash
+sudo SITE_SETTINGS=/home/ttt/AutoVal/site_settings.json env/bin/python -m autoval.autoval_test_runner autoval_ssd.tests.iogo.iogo \
+  --config /home/ttt/AutoVal/hosts.json \
+  --test_control /home/ttt/AutoVal/iogo.json
+```
+
 ## Suite Execution
 
 Run the same test through `test.yaml`:
@@ -43,6 +51,7 @@ sudo SITE_SETTINGS=/home/ttt/AutoVal/site_settings.json env/bin/python -m autova
 ## Notes
 
 - `control.json` and `test.yaml` currently skip `_validate_power_mode`.
+- `iogo.json` must include `"ocp_lm_commands": true` at the top level so IoGO can use OCP latency monitor commands instead of requiring a populated `drive_latency_monitor.json`.
 - `remove_partition` is set to `false`.
 - `unmount_before_test` is set to `false`.
 - If the target NVMe name differs from `nvme0n1`, update both `control.json` and `test.yaml`.

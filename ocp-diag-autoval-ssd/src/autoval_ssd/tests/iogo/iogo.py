@@ -59,7 +59,7 @@ class IoGO(StorageTestBase):
 
     # @override
     def setup(self, *args, **kwargs) -> None:
-        self.storage_test_tools.extend(["fiosynth"])
+        # self.storage_test_tools.extend(["fiosynth"])
         super().setup(*args, **kwargs)
         # Setup fio
         if self.test_drives:
@@ -472,6 +472,6 @@ class IoGO(StorageTestBase):
         AutovalLog.log_info(f"File Path: {file_path}")
         remote_path = os.path.join(self.dut_tmpdir[self.host.hostname], "ioT6.go")
         AutovalLog.log_info(f"Executable Path on the remote DUT: {remote_path}")
-        SSHConn.put_file(self.host, file_path, remote_path)
+        self.host.put_file(file_path, remote_path)
         self.host.run(f"chmod +x -R {remote_path}")
         return remote_path

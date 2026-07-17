@@ -27,7 +27,7 @@ class SedCheck(StorageTestBase):
         self.include_boot_drive = True
 
     def setup(self, *args, **kwargs) -> None:
-        self.storage_test_tools.extend(["sedutil"])
+        #self.storage_test_tools.extend(["sedutil"])
         self.test_control["drive_type"] = DriveType.SSD.value
         self.test_control["include_boot_drive"] = True
         self.include_boot_drive = True

@@ -102,8 +102,8 @@ class IoGO(StorageTestBase):
 
         Finally, it creates and runs the ioT6.go script on each device in a separate thread and cleans up any files created during the test.
         """
-        if self.fstype == "btrfs":
-            self.storage_test_tools.extend(["btrfs-progs"])
+        #if self.fstype == "btrfs":
+        #    self.storage_test_tools.extend(["btrfs-progs"])
         self.go_script = self.deploy_tool()
 
         # Check if golang is installed on DUT
