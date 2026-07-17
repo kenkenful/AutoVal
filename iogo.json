@@ -1,0 +1,31 @@
+{
+  "name": "iogo_test",
+  "runner": "autoval",
+  "drive_type": "ssd",
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "ocp_lm_commands": true,
+  "args": {
+    "test_params": {
+      "fstype": "xfs",
+      "drive_type": "ssd",
+      "drive_interface": "nvme",
+      "max_latency": 15,
+      "precondition_loops": 0
+    }
+  },
+  "execution_type": "LOCAL_EXEC_TEST",
+  "hostage": "NONE",
+  "continue_on_error": false,
+  "skip_health_check": false,
+  "min_hosts": 1,
+  "max_hosts": 1,
+  "timeout": 1800,
+  "cmd": "autoval_ssd.tests.iogo.iogo"
+}
