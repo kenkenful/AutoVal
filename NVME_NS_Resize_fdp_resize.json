@@ -23,7 +23,7 @@
   "nvme_update_actions": [
     1
   ],
-  "power_trigger": true,
+  "power_trigger": false,
   "continue_on_error": true,
   "skip_iops_validation": true,
   "workloads": {
