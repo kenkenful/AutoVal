@@ -1,0 +1,28 @@
+{
+  "drive_type": "ssd",
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "fio_timeout": 180000,
+  "run_definition": {
+    "randrw": {
+      "args": {
+        "BLKSIZE": "8k",
+        "IODEPTH": "32",
+        "RUNTIME": "2d",
+        "SIZE": "100%"
+      },
+      "precondition_loops": 1,
+      "template": "stress_fio.fio"
+    }
+  },
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

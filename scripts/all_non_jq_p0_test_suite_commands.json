@@ -1,0 +1,782 @@
+[
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "Flash Firmware Update",
+    "cmd": "autoval_ssd.tests.flash_firmware_update.flash_firmware_update",
+    "json": "scripts/JQ_P1_test_suite/Flash Firmware Update.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "Flash Firmware Update with IO 20 Cycles",
+    "cmd": "autoval_ssd.tests.flash_firmware_update.flash_firmware_update",
+    "json": "scripts/JQ_P1_test_suite/Flash Firmware Update with IO 20 Cycles.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "NVME_Format_10_Cycles",
+    "cmd": "autoval_ssd.tests.nvme_format.nvme_format",
+    "json": "scripts/JQ_P1_test_suite/NVME_Format_10_Cycles.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "NVMECLI",
+    "cmd": "autoval_ssd.tests.nvme_cli.nvme_cli",
+    "json": "scripts/JQ_P1_test_suite/NVMECLI.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "NVME_NS_Resize_OP",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P1_test_suite/NVME_NS_Resize_OP.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "iogo_test",
+    "cmd": "autoval_ssd.tests.iogo.iogo",
+    "json": "scripts/JQ_P1_test_suite/iogo_test.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "Fio_Fb_Stress_2days",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/JQ_P1_test_suite/Fio_Fb_Stress_2days.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "flash_fio_readiness",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/JQ_P1_test_suite/flash_fio_readiness.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_HE_Flash_Short_wTRIM_1H22.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_Cache_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_Cache_1H22.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_Search_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_Search_1H22.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_WSF_2H21_8TB",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_WSF_2H21_8TB.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_WSCACHE_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_WSCACHE_1H22.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "ssd_iogo_trimrate",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/JQ_P1_test_suite/ssd_iogo_trimrate.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "ssd_iogo",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/JQ_P1_test_suite/ssd_iogo.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Fileappend",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_fileappend.ssd_fileappend",
+    "json": "scripts/JQ_P1_test_suite/SSD_Fileappend.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Cachebench",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_cachebench.ssd_cachebench_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Cachebench.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_Fio_4C",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_Fio_4C.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "sed_check",
+    "cmd": "autoval_ssd.tests.sed_check.sed_check",
+    "json": "scripts/JQ_P1_test_suite/sed_check.json"
+  },
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVME_NS_Resize_dix_tooling",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVME_NS_Resize_dix_tooling.json"
+  },
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVME_NS_Resize_dix_resize",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVME_NS_Resize_dix_resize.json"
+  },
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVME_NS_Resize_fdp_resize",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVME_NS_Resize_fdp_resize.json"
+  },
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVME_NS_Resize_fdp_tooling",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVME_NS_Resize_fdp_tooling.json"
+  },
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVMECLI_fdp",
+    "cmd": "autoval_ssd.tests.nvme_cli.nvme_cli",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVMECLI_fdp.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_drive_fill_precondition",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_drive_fill_precondition.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "qlc_di_10_ac_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.qlc_drive_data_integrity",
+    "json": "scripts/QLC_test_suite/qlc_di_10_ac_local.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "qlc_di_10_dc_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.qlc_drive_data_integrity",
+    "json": "scripts/QLC_test_suite/qlc_di_10_dc_local.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "qlc_di_10_reboot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.qlc_drive_data_integrity",
+    "json": "scripts/QLC_test_suite/qlc_di_10_reboot_local.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "qlc_back_to_back_power_cycle_test",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.qlc_drive_data_integrity",
+    "json": "scripts/QLC_test_suite/qlc_back_to_back_power_cycle_test.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_rwmix_sweep",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_rwmix_sweep.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_sweep",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_sweep.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_sweep_with_trim",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_sweep_with_trim.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_slc_stress",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_slc_stress.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_iodepth_sweep",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_iodepth_sweep.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_iodepth_sweep_with_trim",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_iodepth_sweep_with_trim.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_30min",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_30min.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_30min_with_trim",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_30min_with_trim.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_sprandom_drive_fill_precondition",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_sprandom_drive_fill_precondition.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "ssd_iogo_DIX",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/sanity_dix_on_diffs/ssd_iogo_DIX.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_2H21_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSF_2H21_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSCACHE_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSCACHE_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_Search_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_Search_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_HE_Flash_Short_wTRIM_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_Sweep_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_HE_Flash_Short_wTRIM_Sweep_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_Cache_Sweep_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_Cache_Sweep_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSF_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_Search_Sweep_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_Search_Sweep_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSF_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_Cache_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_Cache_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_2H21_8TB_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSF_2H21_8TB_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "NVME_NS_Resize_dix_tooling",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_dix_on_diffs/NVME_NS_Resize_dix_tooling.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "NVME_NS_Resize_dix_resize",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_dix_on_diffs/NVME_NS_Resize_dix_resize.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Cachebench_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_cachebench.ssd_cachebench_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Cachebench_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Fileappend_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_fileappend.ssd_fileappend",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Fileappend_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "ssd_iogo_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/sanity_fdp_on_diff/ssd_iogo_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Twshared_Pkg_Boot_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Twshared_Pkg_Boot_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_WSF_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_WSF_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Stacking_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Stacking_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Rsw_Cp_wTRIM_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Rsw_Cp_wTRIM_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Twi_Iris_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Twi_Iris_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Idyno_Boot_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Idyno_Boot_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Idyno_Boot_Full_Sweep_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Idyno_Boot_Full_Sweep_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_UDB_Boot_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_UDB_Boot_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_TrimRate_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_TrimRate_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Search_Sweep_1H22_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Search_Sweep_1H22_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_WSF_1H22_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_WSF_1H22_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_WSF_2H21_8TB_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_WSF_2H21_8TB_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Warmstorage_HXFS_SSD_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Warmstorage_HXFS_SSD_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_WSCACHE_1H22_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_WSCACHE_1H22_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Twshared_Pkg_Boot_Full_Sweep_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Twshared_Pkg_Boot_Full_Sweep_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "SSD_Synthflash_Search_1H22_FDP",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_fdp_on_diff/SSD_Synthflash_Search_1H22_FDP.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "NVME_NS_Resize_fdp_resize",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_fdp_on_diff/NVME_NS_Resize_fdp_resize.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "NVME_NS_Resize_fdp_tooling",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_fdp_on_diff/NVME_NS_Resize_fdp_tooling.json"
+  },
+  {
+    "suite": "sanity_fdp_on_diff.yaml",
+    "name": "NVMECLI_fdp",
+    "cmd": "autoval_ssd.tests.nvme_cli.nvme_cli",
+    "json": "scripts/sanity_fdp_on_diff/NVMECLI_fdp.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Cachebench",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_cachebench.ssd_cachebench_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Cachebench.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Fileappend",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_fileappend.ssd_fileappend",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Fileappend.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "ssd_iogo",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/sanity_ssd_performance_on_diffs/ssd_iogo.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "ssd_iogo_trimrate",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/sanity_ssd_performance_on_diffs/ssd_iogo_trimrate.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_iogo_boot_trimrate",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_iogo_boot_trimrate.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Search_Sweep_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Search_Sweep_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_2H21",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSF_2H21.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSCACHE_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSCACHE_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Fio_4C",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Fio_4C.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Fio_4C_Boot",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Fio_4C_Boot.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Cache_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Cache_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_HE_Flash_Short_wTRIM_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_2H21_8TB",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSF_2H21_8TB.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Cache_Sweep_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Cache_Sweep_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSF.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Search_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Search_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_TrimRate",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_TrimRate.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_Sweep",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_HE_Flash_Short_wTRIM_Sweep.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSF_1H22.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "sed_check",
+    "cmd": "autoval_ssd.tests.sed_check.sed_check",
+    "json": "scripts/sanity_uboott_on_diffs/sed_check.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_data_integrity_10_inband_warm_reboot_cycle_boot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_uboott_on_diffs/drive_data_integrity_10_inband_warm_reboot_cycle_boot_local.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "NVMECLI",
+    "cmd": "autoval_ssd.tests.nvme_cli.nvme_cli",
+    "json": "scripts/sanity_uboott_on_diffs/NVMECLI.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_data_integrity_10_dc_cycle_ungraceful_boot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_uboott_on_diffs/drive_data_integrity_10_dc_cycle_ungraceful_boot_local.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "fio_rootfs_test",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_uboott_on_diffs/fio_rootfs_test.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_data_integrity_10_dc_cycle_notified_boot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_uboott_on_diffs/drive_data_integrity_10_dc_cycle_notified_boot_local.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_cache_check_bootdrive",
+    "cmd": "autoval_ssd.tests.drive_cache_check.drive_cache_check",
+    "json": "scripts/sanity_uboott_on_diffs/drive_cache_check_bootdrive.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_data_integrity_10_ac_cycle_boot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_uboott_on_diffs/drive_data_integrity_10_ac_cycle_boot_local.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_md5_verify_fio_boot",
+    "cmd": "autoval_ssd.tests.drive_md5_verify.drive_md5_verify",
+    "json": "scripts/sanity_uboott_on_diffs/drive_md5_verify_fio_boot.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "FIO_internal_flush_boot_cycle_1_iteration",
+    "cmd": "autoval_ssd.tests.fio_internal_flush.fio_internal_flush",
+    "json": "scripts/sanity_uboott_on_diffs/FIO_internal_flush_boot_cycle_1_iteration.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "fio_synth_flash_UBOOTT_workload_loop",
+    "cmd": "autoval_ssd.tests.fio_synth_flash.fio_synth_flash",
+    "json": "scripts/sanity_uboott_on_diffs/fio_synth_flash_UBOOTT_workload_loop.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "NVME_NS_Resize_OP",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_ussdt_on_diffs/NVME_NS_Resize_OP.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "namespace_utilization",
+    "cmd": "autoval_ssd.tests.namespace_utilization_test.namespace_utilization_test",
+    "json": "scripts/sanity_ussdt_on_diffs/namespace_utilization.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "HE_Flash_Short_wTRIM_1H22_OCP2.6",
+    "cmd": "autoval_ssd.tests.fio_synth_flash.fio_synth_flash",
+    "json": "scripts/sanity_ussdt_on_diffs/HE_Flash_Short_wTRIM_1H22_OCP2.6.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "trimrate_test",
+    "cmd": "autoval_ssd.tests.iogo.iogo",
+    "json": "scripts/sanity_ussdt_on_diffs/trimrate_test.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "Flash_Data_FioFB_FioStress_WithPeriodicDriveMonitorSideband_6Hours_Local",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_ussdt_on_diffs/Flash_Data_FioFB_FioStress_WithPeriodicDriveMonitorSideband_6Hours_Local.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "PCIe_Bit_Error_Ratio__BER_",
+    "cmd": "autoval_ssd.tests.ber_test.ber_test",
+    "json": "scripts/sanity_ussdt_on_diffs/PCIe_Bit_Error_Ratio__BER_.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "fio_fb_stress_6h_with_periodic_drive_monitor",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_ussdt_on_diffs/fio_fb_stress_6h_with_periodic_drive_monitor.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "DriveDataIntegrity10DcCycleUngracefulLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/DriveDataIntegrity10DcCycleUngracefulLocal.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "flash_fsync_test",
+    "cmd": "autoval_ssd.tests.fsync.fsync",
+    "json": "scripts/sanity_ussdt_on_diffs/flash_fsync_test.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "iogo_test",
+    "cmd": "autoval_ssd.tests.iogo.iogo",
+    "json": "scripts/sanity_ussdt_on_diffs/iogo_test.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "DriveDataIntegrity10dcCycleNotifiedLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/DriveDataIntegrity10dcCycleNotifiedLocal.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "nvme_resize_ns_usercap_TB_sweep",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_ussdt_on_diffs/nvme_resize_ns_usercap_TB_sweep.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "power_cycle_1_with_flush_with_fs_ext4",
+    "cmd": "autoval_ssd.tests.fio_internal_flush.fio_internal_flush",
+    "json": "scripts/sanity_ussdt_on_diffs/power_cycle_1_with_flush_with_fs_ext4.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "NVMECLI",
+    "cmd": "autoval_ssd.tests.nvme_cli.nvme_cli",
+    "json": "scripts/sanity_ussdt_on_diffs/NVMECLI.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "Storage_Data_Collector",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_ussdt_on_diffs/Storage_Data_Collector.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "drive_md5_verify_fs",
+    "cmd": "autoval_ssd.tests.drive_md5_verify.drive_md5_verify",
+    "json": "scripts/sanity_ussdt_on_diffs/drive_md5_verify_fs.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "DriveDataIntegrity10InbandWarmRebootCycleBootLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/DriveDataIntegrity10InbandWarmRebootCycleBootLocal.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "flash_fio_readiness",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_ussdt_on_diffs/flash_fio_readiness.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "namespace_utilization_custom_blocksize",
+    "cmd": "autoval_ssd.tests.namespace_utilization_test.namespace_utilization_test",
+    "json": "scripts/sanity_ussdt_on_diffs/namespace_utilization_custom_blocksize.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "USSDT_Workload_loop_OCP2.6",
+    "cmd": "autoval_ssd.tests.fio_synth_flash.fio_synth_flash",
+    "json": "scripts/sanity_ussdt_on_diffs/USSDT_Workload_loop_OCP2.6.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "Flash_Data_DriveDataIntegrity_DC_Cycle_Notified_LocalFio_WithPeriodicDriveMonitorSideband_10Cycles_Remote",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/Flash_Data_DriveDataIntegrity_DC_Cycle_Notified_LocalFio_WithPeriodicDriveMonitorSideband_10Cycles_Remote.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "NVME_Format_10_Cycles",
+    "cmd": "autoval_ssd.tests.nvme_format.nvme_format",
+    "json": "scripts/sanity_ussdt_on_diffs/NVME_Format_10_Cycles.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "sed_check",
+    "cmd": "autoval_ssd.tests.sed_check.sed_check",
+    "json": "scripts/sanity_ussdt_on_diffs/sed_check.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "DriveDataIntegrity10AcCycleLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/DriveDataIntegrity10AcCycleLocal.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "Flash_Data_DriveDataIntegrity_HwcColdReset_50_PercentDriveFill_10Cycles",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/Flash_Data_DriveDataIntegrity_HwcColdReset_50_PercentDriveFill_10Cycles.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "driveDataIntegrity10DcCycleGracefulShutDownLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/driveDataIntegrity10DcCycleGracefulShutDownLocal.json"
+  }
+]

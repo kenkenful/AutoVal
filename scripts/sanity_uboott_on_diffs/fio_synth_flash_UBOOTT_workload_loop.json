@@ -1,0 +1,24 @@
+{
+  "test_drive_filter": true,
+  "drive_type": "ssd",
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "workload": [
+    "UBOOTT_Workload_loop"
+  ],
+  "fio_synth_params": {
+    "synth_verify": true,
+    "ignore_error": true,
+    "parallel": true
+  },
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

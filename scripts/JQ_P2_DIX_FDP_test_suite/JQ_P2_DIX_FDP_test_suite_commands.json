@@ -1,0 +1,32 @@
+[
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVME_NS_Resize_dix_tooling",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVME_NS_Resize_dix_tooling.json"
+  },
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVME_NS_Resize_dix_resize",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVME_NS_Resize_dix_resize.json"
+  },
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVME_NS_Resize_fdp_resize",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVME_NS_Resize_fdp_resize.json"
+  },
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVME_NS_Resize_fdp_tooling",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVME_NS_Resize_fdp_tooling.json"
+  },
+  {
+    "suite": "JQ_P2_DIX_FDP_test_suite.yaml",
+    "name": "NVMECLI_fdp",
+    "cmd": "autoval_ssd.tests.nvme_cli.nvme_cli",
+    "json": "scripts/JQ_P2_DIX_FDP_test_suite/NVMECLI_fdp.json"
+  }
+]

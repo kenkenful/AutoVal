@@ -1,0 +1,31 @@
+{
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "skip_iops_validation": true,
+  "skip_clean_filesystem": true,
+  "test_generic_drives": true,
+  "t10_dix_format": true,
+  "run_definition": {
+    "write": {
+      "template": "endurance_2_drive_fill_precondition.fio",
+      "args": {
+        "BLOCKSIZE": "256K",
+        "MDSIZE": "4k",
+        "IODEPTH": 128,
+        "SIZE": "100%",
+        "NUMJOBS": "1",
+        "OFFSET": "0"
+      }
+    }
+  },
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

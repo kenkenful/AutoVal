@@ -1,0 +1,33 @@
+{
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "cycle": 20,
+  "run_definition": {
+    "verify": {
+      "args": {
+        "BLKSIZERANGE": "4k-128k",
+        "DEPTH": "128",
+        "RUNTIME": "5m",
+        "RW": "randrw",
+        "SIZE": "10G",
+        "VERIFY": "crc32c"
+      },
+      "template": "range_verify.job"
+    }
+  },
+  "verify_io": true,
+  "versions": [
+    "stable",
+    "latest"
+  ],
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

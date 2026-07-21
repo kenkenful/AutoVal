@@ -1,0 +1,37 @@
+{
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "collect_smart_log": true,
+  "collect_drive_data": false,
+  "synth_verify": true,
+  "DEBUG": 1,
+  "timeout": 171000,
+  "workload_configs": [
+    {
+      "perform_resize": true,
+      "sweep_param_key": "overprovisioning",
+      "sweep_param_unit": "percent",
+      "sweep_param_value": 10,
+      "cycle_count": 1,
+      "perform_raid": false,
+      "set_power_state": true,
+      "devices": [
+        "ALL"
+      ],
+      "workload_suites": [
+        "HE_Flash_Short_wTRIM_Sweep"
+      ]
+    }
+  ],
+  "wr_cache": true,
+  "num_runs": 1,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Cachebench",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_cachebench.ssd_cachebench_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Cachebench.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Fileappend",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_fileappend.ssd_fileappend",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Fileappend.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "ssd_iogo",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/sanity_ssd_performance_on_diffs/ssd_iogo.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "ssd_iogo_trimrate",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/sanity_ssd_performance_on_diffs/ssd_iogo_trimrate.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_iogo_boot_trimrate",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_iogo_boot_trimrate.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Search_Sweep_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Search_Sweep_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_2H21",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSF_2H21.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSCACHE_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSCACHE_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Fio_4C",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Fio_4C.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Fio_4C_Boot",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Fio_4C_Boot.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Cache_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Cache_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_HE_Flash_Short_wTRIM_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_2H21_8TB",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSF_2H21_8TB.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Cache_Sweep_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Cache_Sweep_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSF.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_Search_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_Search_1H22.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_TrimRate",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_TrimRate.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_Sweep",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_HE_Flash_Short_wTRIM_Sweep.json"
+  },
+  {
+    "suite": "sanity_ssd_performance_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_ssd_performance_on_diffs/SSD_Synthflash_WSF_1H22.json"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "cycle_count": 10,
+  "cycle_type": "dc",
+  "remote_fio": false,
+  "drive_type": "ssd",
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "precondition_drive_fill_percent": 50,
+  "hwc_reset": true,
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

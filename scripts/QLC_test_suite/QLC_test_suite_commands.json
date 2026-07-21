@@ -1,0 +1,86 @@
+[
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_drive_fill_precondition",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_drive_fill_precondition.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "qlc_di_10_ac_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.qlc_drive_data_integrity",
+    "json": "scripts/QLC_test_suite/qlc_di_10_ac_local.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "qlc_di_10_dc_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.qlc_drive_data_integrity",
+    "json": "scripts/QLC_test_suite/qlc_di_10_dc_local.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "qlc_di_10_reboot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.qlc_drive_data_integrity",
+    "json": "scripts/QLC_test_suite/qlc_di_10_reboot_local.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "qlc_back_to_back_power_cycle_test",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.qlc_drive_data_integrity",
+    "json": "scripts/QLC_test_suite/qlc_back_to_back_power_cycle_test.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_rwmix_sweep",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_rwmix_sweep.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_sweep",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_sweep.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_sweep_with_trim",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_sweep_with_trim.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_slc_stress",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_slc_stress.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_iodepth_sweep",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_iodepth_sweep.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_iodepth_sweep_with_trim",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_iodepth_sweep_with_trim.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_30min",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_30min.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_performance_30min_with_trim",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_performance_30min_with_trim.json"
+  },
+  {
+    "suite": "QLC_test_suite.yaml",
+    "name": "fio_fb_qlc_sprandom_drive_fill_precondition",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/QLC_test_suite/fio_fb_qlc_sprandom_drive_fill_precondition.json"
+  }
+]

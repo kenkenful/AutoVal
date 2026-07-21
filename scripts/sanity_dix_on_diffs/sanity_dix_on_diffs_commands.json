@@ -1,0 +1,86 @@
+[
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "ssd_iogo_DIX",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/sanity_dix_on_diffs/ssd_iogo_DIX.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_2H21_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSF_2H21_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSCACHE_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSCACHE_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_Search_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_Search_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_HE_Flash_Short_wTRIM_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_Sweep_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_HE_Flash_Short_wTRIM_Sweep_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_Cache_Sweep_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_Cache_Sweep_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSF_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_Search_Sweep_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_Search_Sweep_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSF_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_Cache_1H22_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_Cache_1H22_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "SSD_Synthflash_WSF_2H21_8TB_dix_single_ns",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/sanity_dix_on_diffs/SSD_Synthflash_WSF_2H21_8TB_dix_single_ns.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "NVME_NS_Resize_dix_tooling",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_dix_on_diffs/NVME_NS_Resize_dix_tooling.json"
+  },
+  {
+    "suite": "sanity_dix_on_diffs.yaml",
+    "name": "NVME_NS_Resize_dix_resize",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_dix_on_diffs/NVME_NS_Resize_dix_resize.json"
+  }
+]

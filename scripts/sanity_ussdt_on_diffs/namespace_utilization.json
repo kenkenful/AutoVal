@@ -1,0 +1,32 @@
+{
+  "drive_type": "ssd",
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "cycle": 3,
+  "expected_nuse_size": 2621440,
+  "nvme_format_timeout": 1200,
+  "run_definition": {
+    "write": {
+      "template": "basic_write.fio",
+      "args": {
+        "BLKSIZE": "256k",
+        "SIZE": "10GB",
+        "DEPTH": 32,
+        "RUNTIME": "3600",
+        "VERIFY": "md5",
+        "DO_VERIFY": 0,
+        "RW": "write"
+      }
+    }
+  },
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "sed_check",
+    "cmd": "autoval_ssd.tests.sed_check.sed_check",
+    "json": "scripts/sanity_uboott_on_diffs/sed_check.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_data_integrity_10_inband_warm_reboot_cycle_boot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_uboott_on_diffs/drive_data_integrity_10_inband_warm_reboot_cycle_boot_local.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "NVMECLI",
+    "cmd": "autoval_ssd.tests.nvme_cli.nvme_cli",
+    "json": "scripts/sanity_uboott_on_diffs/NVMECLI.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_data_integrity_10_dc_cycle_ungraceful_boot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_uboott_on_diffs/drive_data_integrity_10_dc_cycle_ungraceful_boot_local.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "fio_rootfs_test",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_uboott_on_diffs/fio_rootfs_test.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_data_integrity_10_dc_cycle_notified_boot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_uboott_on_diffs/drive_data_integrity_10_dc_cycle_notified_boot_local.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_cache_check_bootdrive",
+    "cmd": "autoval_ssd.tests.drive_cache_check.drive_cache_check",
+    "json": "scripts/sanity_uboott_on_diffs/drive_cache_check_bootdrive.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_data_integrity_10_ac_cycle_boot_local",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_uboott_on_diffs/drive_data_integrity_10_ac_cycle_boot_local.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "drive_md5_verify_fio_boot",
+    "cmd": "autoval_ssd.tests.drive_md5_verify.drive_md5_verify",
+    "json": "scripts/sanity_uboott_on_diffs/drive_md5_verify_fio_boot.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "FIO_internal_flush_boot_cycle_1_iteration",
+    "cmd": "autoval_ssd.tests.fio_internal_flush.fio_internal_flush",
+    "json": "scripts/sanity_uboott_on_diffs/FIO_internal_flush_boot_cycle_1_iteration.json"
+  },
+  {
+    "suite": "sanity_uboott_on_diffs.yaml",
+    "name": "fio_synth_flash_UBOOTT_workload_loop",
+    "cmd": "autoval_ssd.tests.fio_synth_flash.fio_synth_flash",
+    "json": "scripts/sanity_uboott_on_diffs/fio_synth_flash_UBOOTT_workload_loop.json"
+  }
+]

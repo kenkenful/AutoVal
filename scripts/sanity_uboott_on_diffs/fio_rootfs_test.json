@@ -1,0 +1,33 @@
+{
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "check_not_empty_test_drives": false,
+  "run_definition": {
+    "random": {
+      "template": "rootfs_template.job",
+      "files": {
+        "file": "/root/havoc_fio_file"
+      },
+      "args": {
+        "NAME": "fio_rootfs_test",
+        "RW": "randrw",
+        "BLKSIZE": "128k",
+        "SIZE": "60G",
+        "RUNTIME": "30m",
+        "DEPTH": 128,
+        "MIXWRITE": 50,
+        "MIXREAD": 50
+      }
+    }
+  },
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

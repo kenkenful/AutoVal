@@ -1,0 +1,116 @@
+[
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "Flash Firmware Update",
+    "cmd": "autoval_ssd.tests.flash_firmware_update.flash_firmware_update",
+    "json": "scripts/JQ_P1_test_suite/Flash Firmware Update.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "Flash Firmware Update with IO 20 Cycles",
+    "cmd": "autoval_ssd.tests.flash_firmware_update.flash_firmware_update",
+    "json": "scripts/JQ_P1_test_suite/Flash Firmware Update with IO 20 Cycles.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "NVME_Format_10_Cycles",
+    "cmd": "autoval_ssd.tests.nvme_format.nvme_format",
+    "json": "scripts/JQ_P1_test_suite/NVME_Format_10_Cycles.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "NVMECLI",
+    "cmd": "autoval_ssd.tests.nvme_cli.nvme_cli",
+    "json": "scripts/JQ_P1_test_suite/NVMECLI.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "NVME_NS_Resize_OP",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/JQ_P1_test_suite/NVME_NS_Resize_OP.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "iogo_test",
+    "cmd": "autoval_ssd.tests.iogo.iogo",
+    "json": "scripts/JQ_P1_test_suite/iogo_test.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "Fio_Fb_Stress_2days",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/JQ_P1_test_suite/Fio_Fb_Stress_2days.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "flash_fio_readiness",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/JQ_P1_test_suite/flash_fio_readiness.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_HE_Flash_Short_wTRIM_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_HE_Flash_Short_wTRIM_1H22.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_Cache_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_Cache_1H22.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_Search_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_Search_1H22.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_WSF_2H21_8TB",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_WSF_2H21_8TB.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_WSCACHE_1H22",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_WSCACHE_1H22.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "ssd_iogo_trimrate",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/JQ_P1_test_suite/ssd_iogo_trimrate.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "ssd_iogo",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_iogo.ssd_iogo",
+    "json": "scripts/JQ_P1_test_suite/ssd_iogo.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Fileappend",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_fileappend.ssd_fileappend",
+    "json": "scripts/JQ_P1_test_suite/SSD_Fileappend.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Cachebench",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_cachebench.ssd_cachebench_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Cachebench.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "SSD_Synthflash_Fio_4C",
+    "cmd": "autoval_ssd.tests.storage_hw_eng.tests.ssd_tests.ssd_synthflash_workload.ssd_synthflash_workload",
+    "json": "scripts/JQ_P1_test_suite/SSD_Synthflash_Fio_4C.json"
+  },
+  {
+    "suite": "JQ_P1_test_suite.yaml",
+    "name": "sed_check",
+    "cmd": "autoval_ssd.tests.sed_check.sed_check",
+    "json": "scripts/JQ_P1_test_suite/sed_check.json"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "run_definition": {
+    "randrw": {
+      "template": "stress_fio.fio",
+      "args": {
+        "RUNTIME": "30m",
+        "BLKSIZE": "8k",
+        "SIZE": "100%",
+        "IODEPTH": "32"
+      }
+    }
+  },
+  "skip_iops_validation": true,
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

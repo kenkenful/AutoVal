@@ -1,0 +1,53 @@
+{
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "skip_iops_validation": true,
+  "skip_clean_filesystem": true,
+  "test_generic_drives": true,
+  "t10_dix_format": true,
+  "qlc_perf_test": true,
+  "enable_performance_metrics_validation": true,
+  "workload_type": "qlc_performance",
+  "clat_percentiles": [
+    "99.000000",
+    "99.990000",
+    "99.999000",
+    "99.999900"
+  ],
+  "add_qlc_trim": true,
+  "run_definition": {
+    "randrw": {
+      "template": "qlc_performance.fio",
+      "args": {
+        "BLOCKSIZE": [
+          "32K,1M",
+          "128K,1M",
+          "32K,128K",
+          "128K,128K"
+        ],
+        "IODEPTH": 128,
+        "SIZE": "100%",
+        "NUMJOBS": "1",
+        "OFFSET": "0",
+        "RUNTIME": "20m",
+        "RWMIXREAD": "80",
+        "TRIM_BLOCKSIZE": [
+          "256K",
+          "1M",
+          "32M",
+          "256M"
+        ]
+      }
+    }
+  },
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

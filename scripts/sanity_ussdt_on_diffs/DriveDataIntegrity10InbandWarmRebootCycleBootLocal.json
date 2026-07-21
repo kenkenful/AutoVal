@@ -1,0 +1,23 @@
+{
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "critical_error_msgs_re_list": [
+    "[[lspci_vvv]] Verify System Config before / after test"
+  ],
+  "critical_error_types": [
+    "POST_TEST_CONFIG_VALIDATION_ERR"
+  ],
+  "cycle_count": 10,
+  "cycle_type": "reboot",
+  "remote_fio": false,
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}

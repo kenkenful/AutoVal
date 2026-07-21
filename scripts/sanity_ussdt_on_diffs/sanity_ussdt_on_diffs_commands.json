@@ -1,0 +1,158 @@
+[
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "NVME_NS_Resize_OP",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_ussdt_on_diffs/NVME_NS_Resize_OP.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "namespace_utilization",
+    "cmd": "autoval_ssd.tests.namespace_utilization_test.namespace_utilization_test",
+    "json": "scripts/sanity_ussdt_on_diffs/namespace_utilization.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "HE_Flash_Short_wTRIM_1H22_OCP2.6",
+    "cmd": "autoval_ssd.tests.fio_synth_flash.fio_synth_flash",
+    "json": "scripts/sanity_ussdt_on_diffs/HE_Flash_Short_wTRIM_1H22_OCP2.6.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "trimrate_test",
+    "cmd": "autoval_ssd.tests.iogo.iogo",
+    "json": "scripts/sanity_ussdt_on_diffs/trimrate_test.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "Flash_Data_FioFB_FioStress_WithPeriodicDriveMonitorSideband_6Hours_Local",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_ussdt_on_diffs/Flash_Data_FioFB_FioStress_WithPeriodicDriveMonitorSideband_6Hours_Local.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "PCIe_Bit_Error_Ratio__BER_",
+    "cmd": "autoval_ssd.tests.ber_test.ber_test",
+    "json": "scripts/sanity_ussdt_on_diffs/PCIe_Bit_Error_Ratio__BER_.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "fio_fb_stress_6h_with_periodic_drive_monitor",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_ussdt_on_diffs/fio_fb_stress_6h_with_periodic_drive_monitor.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "DriveDataIntegrity10DcCycleUngracefulLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/DriveDataIntegrity10DcCycleUngracefulLocal.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "flash_fsync_test",
+    "cmd": "autoval_ssd.tests.fsync.fsync",
+    "json": "scripts/sanity_ussdt_on_diffs/flash_fsync_test.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "iogo_test",
+    "cmd": "autoval_ssd.tests.iogo.iogo",
+    "json": "scripts/sanity_ussdt_on_diffs/iogo_test.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "DriveDataIntegrity10dcCycleNotifiedLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/DriveDataIntegrity10dcCycleNotifiedLocal.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "nvme_resize_ns_usercap_TB_sweep",
+    "cmd": "autoval_ssd.tests.nvme_ns_resize.nvme_ns_resize",
+    "json": "scripts/sanity_ussdt_on_diffs/nvme_resize_ns_usercap_TB_sweep.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "power_cycle_1_with_flush_with_fs_ext4",
+    "cmd": "autoval_ssd.tests.fio_internal_flush.fio_internal_flush",
+    "json": "scripts/sanity_ussdt_on_diffs/power_cycle_1_with_flush_with_fs_ext4.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "NVMECLI",
+    "cmd": "autoval_ssd.tests.nvme_cli.nvme_cli",
+    "json": "scripts/sanity_ussdt_on_diffs/NVMECLI.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "Storage_Data_Collector",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_ussdt_on_diffs/Storage_Data_Collector.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "drive_md5_verify_fs",
+    "cmd": "autoval_ssd.tests.drive_md5_verify.drive_md5_verify",
+    "json": "scripts/sanity_ussdt_on_diffs/drive_md5_verify_fs.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "DriveDataIntegrity10InbandWarmRebootCycleBootLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/DriveDataIntegrity10InbandWarmRebootCycleBootLocal.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "flash_fio_readiness",
+    "cmd": "autoval_ssd.tests.fio_fb.fio_fb",
+    "json": "scripts/sanity_ussdt_on_diffs/flash_fio_readiness.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "namespace_utilization_custom_blocksize",
+    "cmd": "autoval_ssd.tests.namespace_utilization_test.namespace_utilization_test",
+    "json": "scripts/sanity_ussdt_on_diffs/namespace_utilization_custom_blocksize.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "USSDT_Workload_loop_OCP2.6",
+    "cmd": "autoval_ssd.tests.fio_synth_flash.fio_synth_flash",
+    "json": "scripts/sanity_ussdt_on_diffs/USSDT_Workload_loop_OCP2.6.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "Flash_Data_DriveDataIntegrity_DC_Cycle_Notified_LocalFio_WithPeriodicDriveMonitorSideband_10Cycles_Remote",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/Flash_Data_DriveDataIntegrity_DC_Cycle_Notified_LocalFio_WithPeriodicDriveMonitorSideband_10Cycles_Remote.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "NVME_Format_10_Cycles",
+    "cmd": "autoval_ssd.tests.nvme_format.nvme_format",
+    "json": "scripts/sanity_ussdt_on_diffs/NVME_Format_10_Cycles.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "sed_check",
+    "cmd": "autoval_ssd.tests.sed_check.sed_check",
+    "json": "scripts/sanity_ussdt_on_diffs/sed_check.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "DriveDataIntegrity10AcCycleLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/DriveDataIntegrity10AcCycleLocal.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "Flash_Data_DriveDataIntegrity_HwcColdReset_50_PercentDriveFill_10Cycles",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/Flash_Data_DriveDataIntegrity_HwcColdReset_50_PercentDriveFill_10Cycles.json"
+  },
+  {
+    "suite": "sanity_ussdt_on_diffs.yaml",
+    "name": "driveDataIntegrity10DcCycleGracefulShutDownLocal",
+    "cmd": "autoval_ssd.tests.drive_data_integrity.drive_data_integrity",
+    "json": "scripts/sanity_ussdt_on_diffs/driveDataIntegrity10DcCycleGracefulShutDownLocal.json"
+  }
+]

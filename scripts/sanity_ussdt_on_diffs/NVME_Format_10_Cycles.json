@@ -1,0 +1,39 @@
+{
+  "cycle_count": 1,
+  "drive_interface": "nvme",
+  "drives": [
+    "nvme0n1"
+  ],
+  "include_boot_drive": false,
+  "only_boot_drive": false,
+  "remove_partition": false,
+  "unmount_before_test": false,
+  "drive_type": "ssd",
+  "format_cycles": 10,
+  "fstype": "ext4",
+  "ignore_smart": true,
+  "run_definition": {
+    "filesystem_io": {
+      "args": {
+        "BLKSIZE": "4K",
+        "BUFFER_PATTERN": "0xA5",
+        "DEPTH": 128,
+        "DO_VERIFY": 1,
+        "NAME": "fio_nvme",
+        "RUNTIME": "3m",
+        "RW": "write"
+      },
+      "template": "nvme_format_template.fio"
+    }
+  },
+  "secure_erase_option": [
+    0,
+    1,
+    2
+  ],
+  "skip_iops_validation": true,
+  "collect_drive_data": false,
+  "flash_config_logging": false,
+  "skip_health_check": true,
+  "disable_config_collection": true
+}
