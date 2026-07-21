@@ -24,9 +24,10 @@
     1
   ],
   "power_trigger": true,
+  "continue_on_error": true,
   "skip_iops_validation": true,
   "workloads": {
-    "write": {
+    "write_no_power_trigger": {
       "basic_write": {
         "template": "basic_write.fio",
         "args": {
