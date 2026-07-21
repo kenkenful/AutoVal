@@ -14,7 +14,7 @@
     75
   ],
   "cycle_count": 1,
-  "dix_ns_resize": true,
+  "fdp_setup": true,
   "validate_tooling": true,
   "skip_iops_validation": true,
   "run_definition": {
