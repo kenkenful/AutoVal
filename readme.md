@@ -55,17 +55,6 @@ sudo SITE_SETTINGS=/home/ttt/AutoVal/site_settings.json env/bin/python -m autova
   --test_control /home/ttt/AutoVal/scripts/JQ_P1_test_suite/NVME_Format_10_Cycles.json
 ```
 
-<<<<<<< HEAD
-SED take ownership:
-
-```bash
-sudo SITE_SETTINGS=/home/ttt/AutoVal/site_settings.json env/bin/python -m autoval.autoval_test_runner autoval_ssd.tests.sed_check.sed_take_ownership \
-  --config /home/ttt/AutoVal/hosts.json \
-  --test_control /home/ttt/AutoVal/scripts/sed_take_ownership.json
-```
-
-=======
->>>>>>> 7b0e667b7057dcd2d7072ae72cef450ea164791d
 ファイル名にスペースが含まれる場合は、JSONパスを引用符で囲んでください。
 
 ```bash
@@ -97,61 +86,6 @@ sudo SITE_SETTINGS=/home/ttt/AutoVal/site_settings.json env/bin/python -m autova
 - `/home/ttt/AutoVal/autoval_logs/`
 - `/home/ttt/AutoVal/autoval_results/`
 
-<<<<<<< HEAD
-## Flash firmware update
-
-`flash_firmware_update`で使うFirmwareファイルは、`site_settings.json`の
-`repository_dir`配下に配置します。
-
-現在の`repository_dir`は次の場所です。
-
-```text
-/home/ttt/AutoVal/autoval_repository/
-```
-
-SSD用Firmwareは次のディレクトリ構成で配置してください。
-
-```text
-/home/ttt/AutoVal/autoval_repository/bin/flash/<vendor>/<MODEL>/
-  fw_version_map.json
-  fw_binary/
-    <firmware file>
-```
-
-`<vendor>`はドライブの`manufacturer.lower()`、`<MODEL>`はドライブの
-`model.upper()`です。モデル名にスペースがある場合は`_`に変換されます。
-
-例:
-
-```text
-/home/ttt/AutoVal/autoval_repository/bin/flash/samsung/MZQLB960HAJR/
-  fw_version_map.json
-  fw_binary/
-    firmware.bin
-```
-
-`fw_version_map.json`の例:
-
-```json
-{
-  "latest": {
-    "name": "FW_VERSION_NAME",
-    "bin": "firmware.bin",
-    "md5": "optional_md5sum"
-  },
-  "stable": {
-    "name": "STABLE_FW_VERSION",
-    "bin": "stable_firmware.bin"
-  }
-}
-```
-
-`flash_firmware_update`のJSONで指定する`versions`には、`fw_version_map.json`の
-キーを指定します。たとえば`"versions": ["latest", "stable"]`の場合、
-上記JSONの`latest`と`stable`が使われます。
-
-=======
->>>>>>> 7b0e667b7057dcd2d7072ae72cef450ea164791d
 ## BMCを使わない設定
 
 生成したJSONではBMC/OOBに依存しやすい収集処理を避けるため、次の値を設定しています。
