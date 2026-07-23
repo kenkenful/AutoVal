@@ -21,7 +21,7 @@ from autoval_ssd.lib.utils.storage.drive import Drive
 from autoval_ssd.lib.utils.storage.nvme.nvme_utils import NVMeUtils
 
 BYTES_PER_TB = 1000**4
-REPORTED_CAPACITIES = [TB_Capacity * BYTES_PER_TB for TB_Capacity in range(1, 25)]
+REPORTED_CAPACITIES = [TB_Capacity * BYTES_PER_TB for TB_Capacity in range(1, 513)]
 
 
 class NvmeResizeUtil:
