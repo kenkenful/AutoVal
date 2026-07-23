@@ -76,7 +76,7 @@ class SedTakeOwnership(SedCheck):
                         " with the take_ownership"
                     )
                     SedUtils.revert_take_ownership(
-                        self.host, drive, password="facebook"
+                        self.host, drive, password="facebook                        "
                     )
                     if ownership_status == OwnershipStatus.NOT_SET:
                         SedUtils.take_ownership(self.host, drive, password=msid)
@@ -96,5 +96,5 @@ class SedTakeOwnership(SedCheck):
 
     def cleanup(self, *args, **kwargs) -> None:
         for drive in self.ownership_taken_drives:
-            SedUtils.revert_take_ownership(self.host, drive, password="facebook")
+            SedUtils.revert_take_ownership(self.host, drive, password="facebook                        ")
         super().cleanup(*args, **kwargs)
