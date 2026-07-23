@@ -35,7 +35,9 @@ class SedUtils:
         AutovalLog.log_info("Taking ownership.")
         status = drive.get_tcg_ownership_status()
         if status == OwnershipStatus.NOT_SET:
-            cmd = f"sedutil-cli -v -n --setSIDPassword {password} facebook /dev/{drive.block_name}"
+
+            new_password = "facebook                        "
+            cmd = f"sedutil-cli -v -n --setSIDPassword {password} '{new_password}' /dev/{drive.block_name}"
             out = host.run(cmd)
             AutovalLog.log_info(out)
             AutovalUtils.validate_equal(
@@ -139,7 +141,7 @@ class SedUtils:
                         warning=warning,
                     )
                     return
-            cmd = f"sedutil-cli -v -n --reverttper {password} /dev/{drive.block_name}"
+            cmd = f"sedutil-cli -v -n --reverttper '{password}' /dev/{drive.block_name}"
             out = host.run(cmd=cmd, ignore_status=True)
             if "NOT_AUTHORIZED" in out:
                 boot_drive = DiskUtils.get_boot_drive(host)
