@@ -614,7 +614,10 @@ class NVMeUtils:
             bool: True if the command was successful, False otherwise.
         """
         control_value = 1 if enable else 0
-        cmd = f"nvme set-feature /dev/{drive} -f 0x1D -c {control_value} -s"
+        
+        #cmd = f"nvme set-feature /dev/{drive} -f 0x1D -c {control_value} -s"
+        cmd = f"nvme set-feature /dev/{drive} -f 0x1D --value=0x1 --cdw12={control_value} -s"
+        
         output = host.run(cmd, ignore_status=True)
         if "INVALID_FIELD" not in output:
             return True
@@ -632,7 +635,9 @@ class NVMeUtils:
         Returns:
             bool: True if the feature is enabled, False otherwise.
         """
-        cmd = f"nvme get-feature /dev/{drive} -f 0x1D -H"
+        #cmd = f"nvme get-feature /dev/{drive} -f 0x1D -H"
+        cmd = f"nvme get-feature /dev/{drive} -f 0x1D -c 0x1 -H"
+        
         output = host.run(cmd, ignore_status=True)
 
         if "Current value:" in output:
